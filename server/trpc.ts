@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
  */
 // Add prisma in context to faciliate easy testing
 
-const t = initTRPC.context<{ prisma: {User : typeof prisma.user , Todo : typeof prisma.todo } , userId?: string }>().create();
+const t = initTRPC.context<{ prisma: {User : typeof prisma.user , Todo : typeof prisma.todo } ; userId?: string; }>().create();
 /**
  * Export reusable router and procedure helpers
  * that can be used throughout the router
