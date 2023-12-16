@@ -15,3 +15,4 @@ const t = initTRPC.context<{ prisma: {User : typeof prisma.user , Todo : typeof 
  */
 export const router = t.router;
 export const publicProcedure = t.procedure;
+export const middlewares = t.middleware

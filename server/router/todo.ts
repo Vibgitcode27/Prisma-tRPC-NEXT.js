@@ -10,7 +10,7 @@ export const todoRouter = router({
         status: z.boolean() 
       }))
       .mutation( async (opts) =>
-      {
+      {  
         let title = opts.input.title;
         let description = opts.input.description;
         let status = opts.input.status;
